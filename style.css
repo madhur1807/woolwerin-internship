@@ -35,3 +35,24 @@ h3{
 .card-text{
     margin-top:10%;
 }
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid black;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    top: 40%;
+    position: absolute;
+    left: 50%;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }  
+  .owl-stage-outer{
+      padding-bottom: 10px;
+  }
