@@ -1,0 +1,37 @@
+@media screen and (min-width : 990px){
+
+    .navbar-nav{
+        width: 100%;
+    }
+    .nav-item:nth-child(3){
+        width: 74%
+    }
+    .nav-item:nth-child(3)>a{
+        float: right;
+    }
+}
+
+h3{
+    text-align: center;
+}
+.owl-nav{
+    text-align: center;
+}
+
+.card-body{
+    text-align: center;
+}
+.card-title{
+    font-weight: 800;
+}
+.card-img-top{
+    border-radius: 9em;
+    border : 8px solid #F3EFEE;
+}
+.card{
+    padding:9%;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, .5);
+}
+.card-text{
+    margin-top:10%;
+}
