@@ -77,11 +77,15 @@ function memberManage(){
         }
     } else{
         var success = true;
-        if($("#name").val() ==  "" || $("#designation").val() ==  "" || $("#brief").val() ==  ""){
+        if($("#name").val() ==  "" || $("#designation").val() ==  "" || $("#brief").val() ==  "" || $("#name").val().trim() ==  "" || $("#designation").val().trim() ==  "" || $("#brief").val().trim() ==  ""){
             success = false;
             alert("Please fill all fields!");
         }
-        if(success){
+        if(window.member_image == undefined){
+            success = false;
+            alert("Please select member's image!"); 
+        }
+        if(success){            
             $("#addMember").prop("disabled", "true");
             firebase.database().ref().child('members_new').push().set({
                 member_name : $("#name").val(),
